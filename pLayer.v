@@ -23,29 +23,32 @@
 module pLayer(
 state,
 clock,
-enable,
-out
+out,
+enable_in,
+enable_out
 );
 input [63:0] state;
 input clock;
-input enable;
 output [63:0] out;
+input enable_in;
+output enable_out;
 
 wire [63:0] state;
 wire clock;
-wire enable;
 reg [63:0] out;
+wire enable_in;
+reg enable_out;
 
 always @ (posedge clock)
 		
 begin: GENERATE
 
 	out[0] = state[0];
-	out[16] = state[1];
-	out[32] = state[2];
-	out[48] = state[3];
-	out[1] = state[4];
-	out[17] = state[5];
+        out[16] = state[1];
+        out[32] = state[2];
+        out[48] = state[3];
+        out[1] = state[4];
+        out[17] = state[5];
 	out[33] = state[6];
 	out[49] = state[7];
 	out[2] = state[8];
