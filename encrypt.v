@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-`include "gen_round_keyz.v"
+
 module encrypt(
 clock,
 key,
@@ -39,9 +39,11 @@ wire [63:0] plaintext;
 wire enable_in;
 reg enable_generate;
 reg [63:0] encrypted_text;
-reg [63:0] round_key;
+wire [63:0] round_key;
 reg [5:0] round_counter;
-reg [63:0] round_keys_list [4:0];
+reg [63:0] round_keys_list [31:0];
+reg [5:0] max_rounds = 32;
+
 
 gen_round_keyz generate_module(key, clock, enable_generate,round_counter,round_key);
 
@@ -50,10 +52,11 @@ always @ (posedge clock)
         if (enable_in == 1'b0) begin
             round_counter = -1;
             enable_generate = 0;
-            round_counter = round_counter + 1;
-            enable_generate = 1;
+            round_counter = round_counter + 1;            
+            
         end
-        else begin
+        else if (round_counter <= max_rounds) begin
+            enable_generate = 1;
             round_keys_list[round_counter - 1] = round_key;
             encrypted_text =  round_keys_list[round_counter - 1];
             round_counter = round_counter + 1;
