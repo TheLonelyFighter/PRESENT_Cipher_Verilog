@@ -38,11 +38,13 @@ wire [79:0] key;
 wire [63:0] plaintext;
 wire enable_in;
 reg enable_generate;
+reg enable_s_box;
 reg [63:0] encrypted_text;
 wire [63:0] round_key;
 reg [5:0] round_counter;
-reg [63:0] round_keys_list [31:0];
+reg [63:0] round_keys_list [31:0]; //here we sawe all round_keys generated
 reg [5:0] max_rounds = 32;
+reg [3:0] stage = 0; //used for syncronising purposes
 
 
 gen_round_keyz generate_module(key, clock, enable_generate,round_counter,round_key);
@@ -55,16 +57,23 @@ always @ (posedge clock)
             round_counter = round_counter + 1;            
             
         end
-        else if (round_counter <= max_rounds) begin
+        else if (stage == 0) begin
             enable_generate = 1;
             round_keys_list[round_counter - 1] = round_key;
             encrypted_text =  round_keys_list[round_counter - 1];
             round_counter = round_counter + 1;
-             
-            
+            if (round_counter == max_rounds + 1) begin
+                stage = 1;
+            end
+        end
+       else if (stage == 1) begin
+         //here we do sbox layer
+         enable_s_box = 1;
         end
             
-        
     end
+            
+        
+    
 
 endmodule
