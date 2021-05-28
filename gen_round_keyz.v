@@ -25,7 +25,7 @@ key,
 clock,
 enable_in,
 round_counter,
-round_out,
+round_out
 );
 
 input [79:0] key;
