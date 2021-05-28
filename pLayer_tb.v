@@ -22,28 +22,29 @@
 `include "pLayer.v"
 module pLayer_tb();
 
-reg clock;
-reg enable;
-wire [63:0] out;
-reg [63:0] just_count;
 reg [63:0] state;
-
+reg clock;
+wire [63:0] out;
+reg enable_in;
+reg enable_out;
+//reg [63:0] just_count;
 
 
 initial begin
-    $display ("time    clock    enable   out");	
-    $monitor ("%g\t %b    %b    %h",   $time, clock, enable, out);	
+    $display ("time    clock    enable_in   enable_out   out");	
+    $monitor ("%g\t      %b      %b       %b       %h",   $time, clock, enable_in, enable_out, out);	
     clock = 0;
-    enable = 0;
-    state = 64'hcccccccccccccccc;
-    just_count = 0;
+    enable_in = 0;
+    enable_out = 0;
+    state = 64'h7b4d942d3cbdcf1a;
+    //just_count = 0;
 end
 
 always begin
 #50 clock = ~clock;
-    just_count = just_count + 1;
+    //just_count = just_count + 1;
 end
 
-pLayer dut_pLayer(state, clock, enale, out);
+pLayer dut_pLayer(state, clock, out, enable_in);
 
 endmodule
