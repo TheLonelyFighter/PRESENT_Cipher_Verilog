@@ -35,7 +35,7 @@ initial begin
     $monitor ("%g\t %b    %b    %h",   $time, clock, enable, out);	
     clock = 0;
     enable = 0;
-    state = 64'h45ef82118f2845a3;
+    state = 64'hcccccccccccccccc;
     just_count = 0;
 end
 
