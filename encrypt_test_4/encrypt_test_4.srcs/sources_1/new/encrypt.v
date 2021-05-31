@@ -52,13 +52,16 @@ wire [63:0] sBoxOut;
 
 gen_round_keyz generate_module(key, clock, enable_generate,round_counter,round_key);
 sBoxLayer sBoxLayer_module(state,clock, sBoxOut);
+//addplayer
 
 always @ (posedge clock)
     begin: ENCRYPT
         if (enable_in == 1'b0) begin
             round_counter = -1;
             enable_generate = 0;
-            round_counter = round_counter + 1;            
+            round_counter = round_counter + 1;  
+            state = plaintext;
+          
             
         end
         else if (stage == 0) begin //here we begin generating round_keys
@@ -68,18 +71,23 @@ always @ (posedge clock)
             round_counter = round_counter + 1;
             if (round_counter == max_rounds + 1) begin //stop generating keys when you reached the amount you need
                 stage = 1; 
+                round_counter = 0;
             end
         end
        else if (stage == 1) begin //encrypt stage
-         //here we do sbox layer
-         state = plaintext;
-         for (i = 0; i < max_rounds - 1; i = i + 1) begin
-            state = state ^ round_keys_list[i];
+         //here we do sbox layer       
+       
+            state = state ^ round_keys_list[round_counter];
+            round_counter = round_counter + 1;
+         
+         stage = 2;
+        end
+        else if (stage == 2) begin
             state = sBoxOut;
             encrypted_text = state;
-            end
-         enable_s_box = 1;
+            stage = 1;
         end
+        
             
     end
             
