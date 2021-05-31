@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../encrypt_test_4.srcs/sources_1/new/encrypt.v" \
+"../../../../encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" \
+"../../../../encrypt_test_4.srcs/sources_1/new/sBoxLayer.v" \
+"../../../../encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
