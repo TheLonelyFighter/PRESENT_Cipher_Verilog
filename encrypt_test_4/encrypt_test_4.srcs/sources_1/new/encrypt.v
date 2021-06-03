@@ -87,7 +87,8 @@ always @ (posedge clock)
             encrypted_text = state;
             stage = 1;
         end
-        
+   //add a register in-between sBoxLayer and pLayer to make sure 
+   //the combinational circuits have time to update their output
             
     end
             
