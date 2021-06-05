@@ -4,5 +4,22 @@ Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.e
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'encrypted_text' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sim_1/new/encrypt_tb.v:15]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/p_layer.v" Line 1. Module p_layer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/p_layer.v" Line 1. Module p_layer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gen_round_keyz
+Compiling module xil_defaultlib.sbox_layer
+Compiling module xil_defaultlib.p_layer
+Compiling module xil_defaultlib.encrypt
+Compiling module xil_defaultlib.encrypt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot encrypt_tb_behav

@@ -7,7 +7,7 @@ module gen_round_keyz(
 );
     
     reg[79:0] aux;
-    
+       
     always @ (round_counter)
         begin: GENERATE  
             if (enable_in == 1'b0)

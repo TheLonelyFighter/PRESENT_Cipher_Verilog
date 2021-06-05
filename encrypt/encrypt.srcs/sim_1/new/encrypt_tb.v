@@ -5,7 +5,7 @@ module encrypt_tb();
     reg enable_in;
     reg [79:0] key;
     reg [63:0] plaintext;
-    reg [63:0] encrypted_text;
+    wire [63:0] encrypted_text;
     
     encrypt dut_encrypt(
         clock,
