@@ -14,8 +14,8 @@ Command: link_design -top encrypt -part xc7a35tcpg236-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1015.816 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 256 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1017.230 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 320 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'encrypt' is not ideal for floorplanning, since the cellview 'encrypt' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-479] Netlist was created with Vivado 2020.2
@@ -23,13 +23,13 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
 Finished Parsing XDC File [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1015.816 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1017.230 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 7 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1015.816 ; gain = 0.000
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.230 ; gain = 0.000
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -40,54 +40,99 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1015.816 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1017.230 ; gain = 0.000
+
+Starting Cache Timing Information Task
+
+*** Running vivado
+    with args -log encrypt.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source encrypt.tcl -notrace
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source encrypt.tcl -notrace
+Command: link_design -top encrypt -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1019.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 320 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'encrypt' is not ideal for floorplanning, since the cellview 'encrypt' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1019.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1019.414 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1019.414 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 7b5364b5
+Ending Cache Timing Information Task | Checksum: 2c1f2a67
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1315.164 ; gain = 299.348
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1313.895 ; gain = 294.480
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 7b5364b5
+Phase 1 Retarget | Checksum: 2c1f2a67
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1524.562 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1526.301 ; gain = 0.000
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 7b5364b5
+Phase 2 Constant propagation | Checksum: 2c1f2a67
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 1524.562 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1526.301 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 7b5364b5
+Phase 3 Sweep | Checksum: 2c1f2a67
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 1524.562 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 1526.301 ; gain = 0.000
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 7b5364b5
+Phase 4 BUFG optimization | Checksum: 2c1f2a67
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1524.562 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 1526.301 ; gain = 0.000
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 7b5364b5
+Phase 5 Shift Register Optimization | Checksum: 2c1f2a67
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 1524.562 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.203 . Memory (MB): peak = 1526.301 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 7b5364b5
+Phase 6 Post Processing Netlist | Checksum: 2c1f2a67
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.235 . Memory (MB): peak = 1524.562 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.212 . Memory (MB): peak = 1526.301 ; gain = 0.000
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -108,31 +153,31 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1524.562 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 7b5364b5
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1526.301 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 2c1f2a67
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.241 . Memory (MB): peak = 1524.562 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1526.301 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: 7b5364b5
+Ending Power Optimization Task | Checksum: 2c1f2a67
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1524.562 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1526.301 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 7b5364b5
+Ending Final Cleanup Task | Checksum: 2c1f2a67
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1524.562 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1526.301 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1524.562 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 7b5364b5
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1526.301 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 2c1f2a67
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1524.562 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1526.301 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 24 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1524.562 ; gain = 508.746
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1526.301 ; gain = 506.887
 INFO: [Timing 38-480] Writing timing data to binary archive.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.runs/impl_1/encrypt_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file encrypt_drc_opted.rpt -pb encrypt_drc_opted.pb -rpx encrypt_drc_opted.rpx
@@ -152,9 +197,7 @@ INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 Running DRC as a precondition to command place_design
 INFO: [DRC 23-27] Running DRC with 2 threads
-CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is generate_module/p_0_in[79]. Please evaluate your design. The cells in the loop are: generate_module/out_reg[2]_i_1.
-CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 15 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is generate_module/p_0_in[77]. Please evaluate your design. The cells in the loop are: generate_module/out_reg[0]_i_1, generate_module/out_reg[1]_i_1, generate_module/out_reg[1]_i_2, generate_module/out_reg[1]_i_3, generate_module/out_reg[2]_i_1, generate_module/out_reg[2]_i_2, generate_module/out_reg[2]_i_3, generate_module/out_reg[18]_i_1, generate_module/out_reg[57]_i_2, generate_module/out_reg[60]_i_3, generate_module/out_reg[60]_i_4, generate_module/out_reg[61]_i_2, generate_module/out_reg[62]_i_2, out_reg[62]_i_3, and generate_module/out_reg[63]_i_2.
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 2 Critical Warnings
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
 Starting Placer Task
@@ -163,14 +206,14 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1579.605 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 31e1acc7
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1570.336 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 21dfc830
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1579.605 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1579.605 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1570.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1570.336 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 195 I/O ports
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 210 I/O ports
  while the target  device: 7a35t package: cpg236, contains only 106 available user I/O. The target device has 106 usable I/O pins of which 0 are already occupied by user-locked I/Os.
  To rectify this issue:
  1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
@@ -178,7 +221,6 @@ ERROR: [Place 30-415] IO Placement failed due to overutilization. This design co
  3. Consider design changes to reduce the number of I/Os necessary.
 ERROR: [Place 30-68] Instance clock_IBUF_BUFG_inst (BUFG) is not placed
 ERROR: [Place 30-68] Instance clock_IBUF_inst (IBUF) is not placed
-ERROR: [Place 30-68] Instance enable_generate_BUFG_inst (BUFG) is not placed
 ERROR: [Place 30-68] Instance enable_in_IBUF_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance encrypted_text_OBUF[0]_inst (OBUF) is not placed
 ERROR: [Place 30-68] Instance encrypted_text_OBUF[10]_inst (OBUF) is not placed
@@ -244,11 +286,18 @@ ERROR: [Place 30-68] Instance encrypted_text_OBUF[6]_inst (OBUF) is not placed
 ERROR: [Place 30-68] Instance encrypted_text_OBUF[7]_inst (OBUF) is not placed
 ERROR: [Place 30-68] Instance encrypted_text_OBUF[8]_inst (OBUF) is not placed
 ERROR: [Place 30-68] Instance encrypted_text_OBUF[9]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance key_IBUF[0]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance key_IBUF[10]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance key_IBUF[11]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance key_IBUF[12]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance key_IBUF[13]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance key_IBUF[14]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[15]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[16]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[17]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[18]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[19]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance key_IBUF[1]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[20]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[21]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[22]_inst (IBUF) is not placed
@@ -259,6 +308,7 @@ ERROR: [Place 30-68] Instance key_IBUF[26]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[27]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[28]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[29]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance key_IBUF[2]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[30]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[31]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[32]_inst (IBUF) is not placed
@@ -269,27 +319,20 @@ ERROR: [Place 30-68] Instance key_IBUF[36]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[37]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[38]_inst (IBUF) is not placed
 ERROR: [Place 30-68] Instance key_IBUF[39]_inst (IBUF) is not placed
-ERROR: [Place 30-68] Instance key_IBUF[40]_inst (IBUF) is not placed
-ERROR: [Place 30-68] Instance key_IBUF[41]_inst (IBUF) is not placed
-ERROR: [Place 30-68] Instance key_IBUF[42]_inst (IBUF) is not placed
-ERROR: [Place 30-68] Instance key_IBUF[43]_inst (IBUF) is not placed
-ERROR: [Place 30-68] Instance key_IBUF[44]_inst (IBUF) is not placed
-ERROR: [Place 30-68] Instance key_IBUF[45]_inst (IBUF) is not placed
-ERROR: [Place 30-68] Instance key_IBUF[46]_inst (IBUF) is not placed
 INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 5082d089
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17ce5bae
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.670 . Memory (MB): peak = 1579.605 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 5082d089
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.445 . Memory (MB): peak = 1570.336 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 17ce5bae
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.671 . Memory (MB): peak = 1579.605 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.446 . Memory (MB): peak = 1570.336 ; gain = 0.000
 ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
 Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
-Ending Placer Task | Checksum: 5082d089
+Ending Placer Task | Checksum: 17ce5bae
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.671 . Memory (MB): peak = 1579.605 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.447 . Memory (MB): peak = 1570.336 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-43 Infos, 1 Warnings, 2 Critical Warnings and 103 Errors encountered.
+43 Infos, 1 Warnings, 0 Critical Warnings and 103 Errors encountered.
 place_design failed
 ERROR: [Common 17-69] Command failed: Placer could not place all instances
-INFO: [Common 17-206] Exiting Vivado at Sat Jun  5 15:40:32 2021...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 26 18:20:24 2021...

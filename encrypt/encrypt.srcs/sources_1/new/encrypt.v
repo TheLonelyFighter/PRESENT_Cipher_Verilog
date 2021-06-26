@@ -9,11 +9,12 @@ module encrypt(
     reg enable_generate;
     reg enable_s_box;
     
-    wire [63:0] round_key;
+    wire [79:0] round_key;
     reg [5:0] round_counter;
     reg [5:0] loop_counter;
     reg [63:0] round_keys_list [31:0]; //here we sawe all round_keys generated
     reg [5:0] max_rounds = 32;
+    reg [79:0] previous_round_key;
     
     // FSM state
     reg [3:0] stage = 0;
@@ -21,7 +22,7 @@ module encrypt(
     wire [63:0] sbox_out;
     wire [63:0] p_layer_out;
     
-    gen_round_keyz generate_module(clock, enable_generate, key, round_counter, round_key);
+    gen_round_keyz generate_module(clock, enable_generate, previous_round_key, round_counter, round_key);
     sbox_layer sbox(clock, state, sbox_out);
     p_layer p_layer(clock, sbox_out, p_layer_out);
     
@@ -32,15 +33,17 @@ module encrypt(
                 round_counter = 0;
                 enable_generate = 0;
                 state = plaintext;
+                previous_round_key = key;
             end
             else case(stage)
                 // Round keys generation
                 0: begin
                     enable_generate = 1;
-                    round_keys_list[round_counter - 1] = round_key; 
+                    round_keys_list[round_counter] = round_key[79:16]; //{aux[18:0], aux[79:19]};
+                    previous_round_key = round_key;
                    // encrypted_text =  round_keys_list[round_counter - 1];
                     round_counter = round_counter + 1;
-                    if (round_counter == max_rounds + 1) begin //stop generating keys when you reached the amount you need
+                    if (round_counter == max_rounds ) begin //stop generating keys when you reached the amount you need
                         stage = 1; 
                         loop_counter = 0;
                         enable_generate = 0;

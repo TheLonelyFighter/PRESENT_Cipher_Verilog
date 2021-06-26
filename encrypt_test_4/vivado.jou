@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun  4 18:00:57 2021
+# Process ID: 5584
+# Current directory: C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9172 C:\Users\k\Dev\Projects\PRESENT_Cipher_Verilog\encrypt_test_4\encrypt_test_4.xpr
+# Log file: C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/vivado.log
+# Journal file: C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/s_box_layer.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/s_box_layer.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sBoxLayer.v] -no_script -reset -force -quiet
+remove_files  C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sBoxLayer.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/s_box_layer.v] -no_script -reset -force -quiet
+remove_files  C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/s_box_layer.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/sbox_layer_tb.v w ]
+add_files -fileset sim_1 C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/sbox_layer_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+set_property is_enabled false [get_files  C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/sbox_layer_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/sbox_layer_tb.v
+file delete -force C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/sbox_layer_tb.v
+set_property is_enabled true [get_files  C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+create_project encrypt C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt -part xc7a35tcpg236-1
+close_sim
+add_files -fileset constrs_1 -norecurse C:/Users/k/Downloads/Basys3_Master.xdc
+import_files -fileset constrs_1 C:/Users/k/Downloads/Basys3_Master.xdc
+file mkdir C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt_tb.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt_tb.v
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/sbox_layer.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/sbox_layer.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/gen_round_keyz.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/gen_round_keyz.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt_tb.v] -no_script -reset -force -quiet
+remove_files  C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt_tb.v
+file delete -force C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt_tb.v
+update_compile_order -fileset sources_1
+file mkdir C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sim_1/new/encrypt_tb.v w ]
+add_files -fileset sim_1 C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sim_1/new/encrypt_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source encrypt_tb.tcl
+close_sim
+launch_simulation
+close_project

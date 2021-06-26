@@ -1,0 +1,1100 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun  4 18:00:57 2021
+# Process ID: 5584
+# Current directory: C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9172 C:\Users\k\Dev\Projects\PRESENT_Cipher_Verilog\encrypt_test_4\encrypt_test_4.xpr
+# Log file: C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/vivado.log
+# Journal file: C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Vivado_Projects/encrypt_test_4' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.gen/sources_1', nor could it be found using path 'F:/Vivado_Projects/encrypt_test_4/encrypt_test_4.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.863 ; gain = 0.000
+update_compile_order -fileset sources_1
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/s_box_layer.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/s_box_layer.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sBoxLayer.v] -no_script -reset -force -quiet
+remove_files  C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sBoxLayer.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/s_box_layer.v] -no_script -reset -force -quiet
+remove_files  C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/s_box_layer.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'encrypted_text' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v:30]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'encrypted_text' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v:15]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'encrypted_text' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v:15]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'sbox_out' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:23]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'encrypted_text' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v:15]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gen_round_keyz
+Compiling module xil_defaultlib.sbox_layer
+Compiling module xil_defaultlib.encrypt
+Compiling module xil_defaultlib.encrypt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot encrypt_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/xsim.dir/encrypt_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/xsim.dir/encrypt_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jun  4 19:06:02 2021. For additional details about this file, please refer to the WebTalk help file at C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun  4 19:06:02 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.863 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "encrypt_tb_behav -key {Behavioral:sim_1:Functional:encrypt_tb} -tclbatch {encrypt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'F:/Vivado_Projects/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1017.863 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.863 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "encrypt_tb_behav -key {Behavioral:sim_1:Functional:encrypt_tb} -tclbatch {encrypt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'F:/Vivado_Projects/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'encrypted_text' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v:15]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'encrypted_text' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v:15]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'sbox_out' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:25]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gen_round_keyz
+Compiling module xil_defaultlib.sbox_layer
+Compiling module xil_defaultlib.encrypt
+Compiling module xil_defaultlib.encrypt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot encrypt_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "encrypt_tb_behav -key {Behavioral:sim_1:Functional:encrypt_tb} -tclbatch {encrypt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'F:/Vivado_Projects/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gen_round_keyz
+Compiling module xil_defaultlib.sbox_layer
+Compiling module xil_defaultlib.encrypt
+Compiling module xil_defaultlib.encrypt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot encrypt_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "encrypt_tb_behav -key {Behavioral:sim_1:Functional:encrypt_tb} -tclbatch {encrypt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'F:/Vivado_Projects/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'round_key' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:24]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'sbox_out' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:25]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'round_key' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:24]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'state' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:25]
+ERROR: [VRFC 10-3525] mixed concurrent and procedural assignment on 'state' [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:33]
+ERROR: [VRFC 10-3525] mixed concurrent and procedural assignment on 'state' [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:51]
+ERROR: [VRFC 10-3525] mixed concurrent and procedural assignment on 'state' [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:58]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'round_key' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:24]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'sbox_out' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:25]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'round_key' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:24]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'sbox_out' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:25]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'round_key' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:24]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'sbox_out' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:25]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/sbox_layer_tb.v w ]
+add_files -fileset sim_1 C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/sbox_layer_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'round_key' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:24]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'sbox_out' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v:25]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property is_enabled false [get_files  C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/sbox_layer_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/sbox_layer_tb.v
+file delete -force C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/sbox_layer_tb.v
+set_property is_enabled true [get_files  C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gen_round_keyz
+Compiling module xil_defaultlib.sbox_layer
+Compiling module xil_defaultlib.encrypt
+Compiling module xil_defaultlib.encrypt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot encrypt_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "encrypt_tb_behav -key {Behavioral:sim_1:Functional:encrypt_tb} -tclbatch {encrypt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'F:/Vivado_Projects/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gen_round_keyz
+Compiling module xil_defaultlib.sbox_layer
+Compiling module xil_defaultlib.encrypt
+Compiling module xil_defaultlib.encrypt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot encrypt_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "encrypt_tb_behav -key {Behavioral:sim_1:Functional:encrypt_tb} -tclbatch {encrypt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'F:/Vivado_Projects/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+"xelab -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto de8151065597461c9c2dc995071e96c4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gen_round_keyz
+Compiling module xil_defaultlib.sbox_layer
+Compiling module xil_defaultlib.encrypt
+Compiling module xil_defaultlib.encrypt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot encrypt_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt_test_4/encrypt_test_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "encrypt_tb_behav -key {Behavioral:sim_1:Functional:encrypt_tb} -tclbatch {encrypt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'F:/Vivado_Projects/encrypt_test_4/encrypt_test_4.srcs/sources_1/new/encrypt.v' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+create_project encrypt C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/data/ip'.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+add_files -fileset constrs_1 -norecurse C:/Users/k/Downloads/Basys3_Master.xdc
+import_files -fileset constrs_1 C:/Users/k/Downloads/Basys3_Master.xdc
+file mkdir C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt_tb.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt_tb.v
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/sbox_layer.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/sbox_layer.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/gen_round_keyz.v w ]
+add_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/gen_round_keyz.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt_tb.v] -no_script -reset -force -quiet
+remove_files  C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt_tb.v
+file delete -force C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt_tb.v
+update_compile_order -fileset sources_1
+file mkdir C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sim_1/new/encrypt_tb.v w ]
+add_files -fileset sim_1 C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sim_1/new/encrypt_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim'
+"xelab -wto acc92a7da9f446fb9ee95428e6a9709c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto acc92a7da9f446fb9ee95428e6a9709c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" Line 1. Module encrypt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/gen_round_keyz.v" Line 1. Module gen_round_keyz doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/sbox_layer.v" Line 1. Module sbox_layer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gen_round_keyz
+Compiling module xil_defaultlib.sbox_layer
+Compiling module xil_defaultlib.encrypt
+Compiling module xil_defaultlib.encrypt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot encrypt_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim/xsim.dir/encrypt_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim/xsim.dir/encrypt_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jun  4 19:49:02 2021. For additional details about this file, please refer to the WebTalk help file at C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun  4 19:49:02 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.863 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "encrypt_tb_behav -key {Behavioral:sim_1:Functional:encrypt_tb} -tclbatch {encrypt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source encrypt_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+time    clock       encrypt_out
+0	 1     xxxxxxxxxxxxxxxx
+100	 0     xxxxxxxxxxxxxxxx
+200	 1     xxxxxxxxxxxxxxxx
+300	 0     xxxxxxxxxxxxxxxx
+400	 1     xxxxxxxxxxxxxxxx
+500	 0     xxxxxxxxxxxxxxxx
+600	 1     xxxxxxxxxxxxxxxx
+700	 0     xxxxxxxxxxxxxxxx
+800	 1     xxxxxxxxxxxxxxxx
+900	 0     xxxxxxxxxxxxxxxx
+1000	 1     xxxxxxxxxxxxxxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'encrypt_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.863 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1266.715 ; gain = 248.852
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'encrypt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encrypt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/gen_round_keyz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_round_keyz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/sbox_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sim_1/new/encrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim'
+"xelab -wto acc92a7da9f446fb9ee95428e6a9709c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto acc92a7da9f446fb9ee95428e6a9709c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encrypt_tb_behav xil_defaultlib.encrypt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'encrypted_text' is not permitted [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sim_1/new/encrypt_tb.v:15]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  4 19:52:23 2021...

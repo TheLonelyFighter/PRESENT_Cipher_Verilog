@@ -3,19 +3,20 @@ module gen_round_keyz(
     input             enable_in,
     input      [79:0] key,
     input      [5:0]  round_counter,
-    output reg [63:0] round_out
+    output reg [79:0] round_out
 );
     
     reg[79:0] aux;
        
     always @ (round_counter)
         begin: GENERATE  
-            if (enable_in == 1'b0)
+            if (enable_in == 1'b0) begin
                 aux = key;
+                round_out = aux;
+            end
             else begin
-                round_out = aux[79:16];
-                aux = {aux[18:0], aux[79:19]}; //rotate left by 61 bits       
-                case (aux[79:76])
+                aux = {key[18:0], key[79:19]}; //rotate left by 61 bits
+                case (key[18:15])
                      4'h0: aux[79:76] = 4'hc;
                      4'h1: aux[79:76] = 4'h5;
                      4'h2: aux[79:76] = 4'h6;
@@ -33,7 +34,8 @@ module gen_round_keyz(
                      4'he: aux[79:76] = 4'h1;
                      4'hf: aux[79:76] = 4'h2;
                 endcase
-                aux[19:15] = aux[19:15] ^ round_counter;
+                aux[19:15] = key[38:34] ^ round_counter;
+                round_out = aux;
             end
         end
 endmodule
