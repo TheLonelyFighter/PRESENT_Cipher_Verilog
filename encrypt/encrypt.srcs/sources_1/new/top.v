@@ -1,4 +1,4 @@
-module top(input clock);
+module top(input clock, output result);
     wire [63:0] encrypted_text;
     
     reg [2:0] address = 0;

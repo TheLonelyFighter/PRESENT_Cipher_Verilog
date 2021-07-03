@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="k" Host="DESKTOP-AKKQ52O" Pid="10616" HostCore="12" HostMemory="034292334592">
+    <Process Command="vivado.bat" Owner="marius_mihail.gurgu" Host="MARIUSICA" Pid="16112" HostCore="8" HostMemory="08473579520">
     </Process>
 </ProcessHandle>
