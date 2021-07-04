@@ -2,13 +2,13 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Jul  3 13:32:53 2021
-# Process ID: 9884
-# Current directory: F:/Vivado_Projects/encrypt/encrypt.runs/blk_mem_gen_0_synth_1
+# Start of session at: Sun Jul  4 16:14:17 2021
+# Process ID: 15164
+# Current directory: C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.runs/blk_mem_gen_0_synth_1
 # Command line: vivado.exe -log blk_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
-# Log file: F:/Vivado_Projects/encrypt/encrypt.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
-# Journal file: F:/Vivado_Projects/encrypt/encrypt.runs/blk_mem_gen_0_synth_1\vivado.jou
+# Log file: C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
+# Journal file: C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.runs/blk_mem_gen_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source blk_mem_gen_0.tcl -notrace
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 1c53af76a1298953.
-INFO: [Common 17-206] Exiting Vivado at Sat Jul  3 13:33:05 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Jul  4 16:14:22 2021...

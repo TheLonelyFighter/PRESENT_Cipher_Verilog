@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "F:/Vivado_Projects/encrypt/encrypt.runs/impl_1/top.tcl"
+  variable script "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,24 +122,24 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 3
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir F:/Vivado_Projects/encrypt/encrypt.cache/wt [current_project]
-  set_property parent.project_path F:/Vivado_Projects/encrypt/encrypt.xpr [current_project]
-  set_property ip_output_repo F:/Vivado_Projects/encrypt/encrypt.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.cache/wt [current_project]
+  set_property parent.project_path C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.xpr [current_project]
+  set_property ip_output_repo C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet F:/Vivado_Projects/encrypt/encrypt.runs/synth_1/top.dcp
-  read_ip -quiet F:/Vivado_Projects/encrypt/encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  add_files -quiet C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.runs/synth_1/top.dcp
+  read_ip -quiet C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc F:/Vivado_Projects/encrypt/encrypt.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc
+  read_xdc C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

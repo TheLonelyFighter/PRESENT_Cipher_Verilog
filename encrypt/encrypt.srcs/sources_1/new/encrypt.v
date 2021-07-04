@@ -1,6 +1,6 @@
 module encrypt(
     input             clock,
-    input      [79:0] key, //combine key and plaintext here, not enough I/O ports otherwise
+    input      [79:0] key,
     input      [63:0] plaintext,
     output reg [63:0] encrypted_text
 );
@@ -65,7 +65,6 @@ module encrypt(
                 end
                 // End state
                 3: begin
-                    $display ("stage 3!!!");
                     encrypted_text = state ^ round_keys_list[31];
                 end
             endcase
