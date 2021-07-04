@@ -4,10 +4,10 @@ module encrypt(
     input      [63:0] plaintext,
     output reg [63:0] encrypted_text
 );
+    reg [79:0] current_key;
+    reg [63:0] current_plaintext;
     
     reg enable_generate = 0;
-    reg enable_s_box;
-    
     wire [79:0] round_key;
     reg [5:0] round_counter = 1;
     reg [5:0] loop_counter;
@@ -15,9 +15,8 @@ module encrypt(
     reg [5:0] max_rounds = 32;
     reg [79:0] previous_round_key;
     
-    // FSM state
     reg [3:0] init = 0;
-    reg [3:0] stage = 0;
+    reg [3:0] stage;
     reg [63:0] state;
     wire [63:0] sbox_out;
     wire [63:0] p_layer_out;
@@ -28,12 +27,23 @@ module encrypt(
     
     always @ (posedge clock)
         begin: ENCRYPT
+            if (key != current_key || plaintext != current_plaintext) begin
+                current_key = key;
+                current_plaintext = plaintext;
+                init = 0;
+                round_counter = 1;
+            end
             // Initialization
             if (init < 3) begin
-                state = plaintext;
-                previous_round_key = key;
                 init = init + 1;
-                if (init == 2) round_counter = 0;
+                if (init == 2) begin
+                    current_key = key;
+                    current_plaintext = plaintext;
+                    state = plaintext;
+                    previous_round_key = key;
+                    stage = 0;
+                    round_counter = 0;
+                end
             end
             else case(stage)
                 // Round keys generation

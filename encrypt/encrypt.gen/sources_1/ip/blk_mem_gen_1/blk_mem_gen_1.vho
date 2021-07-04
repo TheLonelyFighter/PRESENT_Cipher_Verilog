@@ -56,7 +56,7 @@ COMPONENT blk_mem_gen_1
   PORT (
     clka : IN STD_LOGIC;
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    addra : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    addra : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     dina : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
     douta : OUT STD_LOGIC_VECTOR(63 DOWNTO 0)
   );

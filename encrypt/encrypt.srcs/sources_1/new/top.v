@@ -1,10 +1,10 @@
 module top(input clock, output result);
     reg ram_wea = 1;
-    reg [2:0] ram_address = 0;
+    reg ram_address = 0;
     wire [63:0] ram_in;
     wire [63:0] ram_out;
     
-    reg [2:0] rom_address = 0;
+    reg rom_address = 0;
     wire [143:0] rom_output;
     
     encrypt encrypt(
