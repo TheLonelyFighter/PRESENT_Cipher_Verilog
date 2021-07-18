@@ -3,12 +3,5 @@ Time resolution is 1 ps
  Block Memory Generator module loading initial data...
  Block Memory Generator data initialization complete.
 Block Memory Generator module encrypt_tb.dut_top.block_rom.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
- Block Memory Generator module loading initial data...
- Block Memory Generator data initialization complete.
 Block Memory Generator module encrypt_tb.dut_top.block_ram.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Stopped at time : 7 us : File "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" Line 63
-Stopped at time : 14200 ns : File "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" Line 63
-Stopped at time : 26600 ns : File "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" Line 78
-Stopped at time : 26800 ns : File "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" Line 78
-Stopped at time : 27 us : File "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" Line 78
-Stopped at time : 27200 ns : File "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" Line 78
+Stopped at time : 19400 ns : File "C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/encrypt.v" Line 78

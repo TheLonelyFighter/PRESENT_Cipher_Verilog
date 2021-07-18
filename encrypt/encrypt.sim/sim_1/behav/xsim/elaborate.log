@@ -4,7 +4,5 @@ Running: C:/Users/k/Dev/Tools/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.e
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'addra' [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/top.v:17]
-WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'addra' [C:/Users/k/Dev/Projects/PRESENT_Cipher_Verilog/encrypt/encrypt.srcs/sources_1/new/top.v:18]
 Completed static elaboration
 INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
